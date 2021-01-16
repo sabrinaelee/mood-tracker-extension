@@ -1,28 +1,75 @@
 body{
-    background-color: white;
+    background-color: #DDDDDD;
     width: 300px;
     height: 500px;
     padding:15px;
+    margin:0 auto;
     text-align: center;
 }
 
 h1{
     color:grey;
 }
+.centerThings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .sr-only {
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+  }
 
-.happy{
-    background-color: white;
-    border-radius: 20px;
+#happybutton{
+  height:55px;
+  width:55px;
+  border: none !important;
+  background-image: url(/happy-button.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transform: all .2s ease-in-out;
+  margin:10px;
+  margin-bottom:15px;
 }
 
-.neutral{
-    background-color: white;
-    border-radius: 20px;
+#happybutton:hover {
+  transform: scale(1.1);
 }
 
-.sad{
-    background-color: white;
-    border-radius: 20px;
+#neutralbutton{
+  height:60px;
+  width:60px;
+  border: none !important;
+  background-image: url(/neutral-button.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transform: all .2s ease-in-out;
+  margin:10px;
+  margin-bottom: 20px;
 }
 
+#neutralbutton:hover {
+  transform: scale(1.1);
+}
 
+#sadbutton{
+  height:60px;
+  width:60px;
+  border: none !important;
+  background-image: url(/sad-button.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transform: all .2s ease-in-out;
+  margin-left:10px;
+}
+
+#sadbutton:hover {
+  transform: scale(1.1);
+}

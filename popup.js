@@ -1,10 +1,4 @@
-document.querySelector(".happy").addEventListener("click", function () {
-   // alert("congrats u r happy");
-  });
 
-  document.querySelector(".neutral").addEventListener("click", function () {
-    //alert("congrats u r neutral");
-  });
 
 const monthNames = [
   "January",

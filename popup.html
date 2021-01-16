@@ -5,13 +5,24 @@
   <meta charset="UTF-8">
   <title>How do you feel?</title>
   <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" type="text/css" href="button.css">
 </head>
 
-<body>
+<body class="body__popup">
     <h1> How do you feel today?</h1>
-     <a href="graph.html"><button class = "happy">Happy</button></a>
-     <a href="graph.html"><button class = "neutral">Neutral</button></a>
-    <a href="graph.html"><button class = "sad">Sad</button></a>
+
+        <div class="centerThings">
+             <a href="graph.html">
+             <div id="happybutton"></div>
+            </a>
+            <a href="graph.html">
+                <div id="neutralbutton"></div>
+            </a>
+            <a href="graph.html">
+                <div id="sadbutton"></div>
+            </a>
+        </div>
+   
   <script src="popup.js" charset="utf-8"></script>
 </body>
 
