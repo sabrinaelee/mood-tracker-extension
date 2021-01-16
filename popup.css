@@ -11,9 +11,18 @@ h1{
 }
 
 .happy{
-    background-color: yellow;
+    background-color: white;
     border-radius: 20px;
 }
 
+.neutral{
+    background-color: white;
+    border-radius: 20px;
+}
+
+.sad{
+    background-color: white;
+    border-radius: 20px;
+}
 
 
