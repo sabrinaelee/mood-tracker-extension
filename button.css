@@ -1,0 +1,25 @@
+/* #happyButton{
+    height:80px;
+    width:80px;
+    border: none !important;
+    background-image: url(./happy-button.svg);
+    background-repeat: no-repeat;
+    background-size:
+    cursor: pointer;
+
+    &:focus {
+      outline: 2px dashed #17171D;
+    }
+    &:hover {
+      svg {
+        transform: scale(1.1);
+      }
+    }
+    &::-moz-focus-inner {
+      border: 0;
+    }
+    svg {
+      outline: none;
+      transition: transform 0.15s linear;
+    } */
+  }
