@@ -5,8 +5,14 @@ body{
     padding:15px;
     text-align: center;
 }
+
 h1{
     color:grey;
+}
+
+.happy{
+    background-color: yellow;
+    border-radius: 20px;
 }
 
 
