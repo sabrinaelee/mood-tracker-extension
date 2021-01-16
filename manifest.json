@@ -12,6 +12,6 @@
 "browser_action":{
     
     "default_popup": "popup.html",
-    "default_title": "sad"
+    "default_title": "sad plant"
 }
 }
