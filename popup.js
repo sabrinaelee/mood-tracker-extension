@@ -23,10 +23,14 @@ let curMon = monthNames[curDate.getMonth()];
 let curDat = curDate.getDate();
 let curMin = curDate.getMinutes();
 let curSec = curDate.getSeconds();
-const message = document.createElement("div");
+const message = document.createElement("h3");
+const message2 = document.createElement("h1");
 
-message.innerHTML = `Date: ${curMon} ${curDat}`;
-document.querySelector(".body__popup")?.append(message);
+message.innerHTML = `${curMon} ${curDat}, ${curYear}`;
+document.querySelector(".body__popup")?.prepend(message);
+
+message2.innerHTML = `${curMon}`;
+document.querySelector(".save")?.append(message2);
 
 let lastDayInMonth = new Date(curYear, curDate.getMonth(), 0);
 const numDaysInMonth = lastDayInMonth.getDate();
@@ -36,19 +40,24 @@ const buttonContainer = document.querySelector(".buttons");
 const daysHTML = document?.querySelector(".days");
 let messageDays = "";
 for (let i = 1; i <= numDaysInMonth; i++) {
-  messageDays += `<div class="btn__${i}">${i}</div>`;
+  messageDays += `<div class="calendar" id="btn__${i}">${i}</div>`;
   if (daysHTML) daysHTML.innerHTML = messageDays;
 }
 const buttonAdding = ``;
 
-const updateButton = function () {
-  const divLocation = document.querySelector(`.btn__${curDat}`);
-  if (divLocation) divLocation.classList.add("blue");
+const updateButton = function (color) {
+  const divLocation = document.querySelector(`#btn__${curDat}`);
+  console.log(`${curDat}`)
+  if (divLocation) divLocation.classList.add(`${color}`);
   console.log("test");
 };
 
+// updateButton();
+
 happy?.addEventListener("click", function () {
   console.log("helo");
+  let color = "orange";
+  updateButton(color)
 });
 neutral?.addEventListener("click", function () {
   console.log("helo");
