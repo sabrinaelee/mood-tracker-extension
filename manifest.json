@@ -10,7 +10,7 @@
     }
 ],
 "browser_action":{
-    
+    "default_icon": "happy-cup.png",
     "default_popup": "popup.html",
     "default_title": "sad plant"
 },
