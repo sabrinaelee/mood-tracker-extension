@@ -1,61 +1,59 @@
-body{
-    background-color: #695958;
-    width: 300px;
-    height: 500px;
-    padding:15px;
-    margin:0 auto;
-    text-align: center;
+body {
+  background-color: #695958;
+  width: 300px;
+  height: 500px;
+  padding: 15px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-h1{
-    color:white;
+h1 {
+  color: white;
 }
 
-h3{
-  color:white;
+h3 {
+  color: white;
 }
 .centerThings {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-  }
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
 
-  .sr-only {
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    width: 1px;
-  }
+.sr-only {
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
 
-#happybutton{
-  height:55px;
-  width:55px;
+#happybutton {
+  height: 55px;
+  width: 55px;
   border: none !important;
   background-image: url(/happy-button.svg);
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
-  transition: all .2s ease-in-out;
-  margin:10px;
+  transition: all 0.2s ease-in-out;
+  margin: 10px;
 }
 
 #happybutton:hover {
   transform: scale(1.3);
-  
-  
 }
 
-#neutralbutton{
-  height:60px;
-  width:60px;
+#neutralbutton {
+  height: 60px;
+  width: 60px;
   border: none !important;
   background-image: url(/neutral-button.svg);
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
-  transition: all .2s ease-in-out;
-  margin:10px;
+  transition: all 0.2s ease-in-out;
+  margin: 10px;
   margin-bottom: 20px;
 }
 
@@ -63,25 +61,25 @@ h3{
   transform: scale(1.1);
 }
 
-#sadbutton{
-  height:60px;
-  width:60px;
+#sadbutton {
+  height: 60px;
+  width: 60px;
   border: none !important;
   background-image: url(/sad-button.svg);
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
-  transition: all .2s ease-in-out;
-  margin-left:10px;
+  transition: all 0.2s ease-in-out;
+  margin-left: 10px;
 }
 
 #sadbutton:hover {
   transform: scale(1.1);
 }
 
-#textbox{
-  height:99px;
-  width:250px;
+#textbox {
+  height: 99px;
+  width: 250px;
   z-index: -5;
   border: none !important;
   background-image: url(/emoji-background.svg);
@@ -89,25 +87,24 @@ h3{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   margin-left: 20px;
 }
 
-#message{
-  height:58px;
-  width:250px;
+#message {
+  height: 58px;
+  width: 250px;
   justify-content: center;
   border: none !important;
   background-image: url(/Mode=Dark\,\ Who_=Recipient.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  margin-left:35px;
-  
+  margin-left: 35px;
 }
 
-#happydrink{
-  height:200px;
-  width:90px;
+#happydrink {
+  height: 200px;
+  width: 90px;
   justify-content: center;
   border: none !important;
   background-image: url(/happy-cup.svg);
@@ -115,78 +112,24 @@ h3{
   background-size: contain;
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left:95px;
-  display:none;
-}
-
-#neutraldrink{
-  height:200px;
-  width:90px;
-  justify-content: center;
-  border: none !important;
-  background-image: url(/neutral-cup.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left:95px;
-  display:none;
-}
-
-#saddrink{
-  height:200px;
-  width:90px;
-  justify-content: center;
-  border: none !important;
-  background-image: url(/sadcup.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left:95px;
-  display:none;
-}
-
-#defaultdrink{
-  height:200px;
-  width:90px;
-  justify-content: center;
-  border: none !important;
-  background-image: url(/default-cup.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left:95px;
-}
-
-#return{
-  height:30px;
-  width:30px;
-  border: none !important;
-  background-image: url(/arrow.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
-  transition: all .2s ease-in-out;
-  margin-top:300px;
-}
-
-#happybutton:hover {
-  transform: scale(1.3);
-  
-  
+  margin-left: 95px;
 }
 
 .days {
   display: flex;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
   justify-content: center;
 }
+/* .weekdays {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} */
 
 .calendar {
-  margin: 4px;
+  margin: 10px;
   background-color: white;
+  text-align: justify;
 }
 
 .blue {
@@ -195,4 +138,27 @@ h3{
 
 .orange {
   background-color: orange;
+}
+
+.btn {
+  width: 18px;
+  height: 18px;
+  text-align: center;
+}
+.btn:hover {
+  padding: 0.5;
+  border: 0.5px solid #000;
+  cursor: pointer;
+}
+
+.color_3 {
+  background-color: rgb(126, 226, 126);
+}
+
+.color_2 {
+  background-color: rgb(250, 250, 139);
+}
+
+.color_1 {
+  background-color: rgb(161, 161, 245);
 }
