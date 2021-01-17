@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
 body {
   background-color: #695958;
   width: 300px;
@@ -9,10 +11,12 @@ body {
 
 h1 {
   color: white;
+  font-family: "Lobster";
 }
 
 h3 {
   color: white;
+  font-family: "Lobster";
 }
 .centerThings {
   display: inline-block;
@@ -113,6 +117,68 @@ h3 {
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 95px;
+  display: none;
+  z-index: -3;
+}
+
+#neutraldrink {
+  height: 200px;
+  width: 90px;
+  justify-content: center;
+  border: none !important;
+  background-image: url(/neutral-cup.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 95px;
+  display: none;
+  z-index: -4;
+}
+
+#saddrink {
+  height: 200px;
+  width: 90px;
+  justify-content: center;
+  border: none !important;
+  background-image: url(/sadcup.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 95px;
+  /* display:none; */
+  z-index: -5;
+}
+
+#defaultdrink {
+  height: 200px;
+  width: 90px;
+  justify-content: center;
+  border: none !important;
+  background-image: url(/default-cup.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 95px;
+  z-index: -1;
+}
+
+#return {
+  height: 30px;
+  width: 30px;
+  border: none !important;
+  background-image: url(/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-top: 3px;
+}
+
+#happybutton:hover {
+  transform: scale(1.3);
 }
 
 .days {
@@ -121,29 +187,12 @@ h3 {
   justify-content: center;
 }
 
-/* .weekdays {
-  width: 80%;
-  height: 80%;
-  padding: 0 7px 0 7px;
-  display: flex;
-  justify-content: space-between;
-   align-items: center;
-} */
-/*
-.weekdays div {
-  letter-spacing: 0.008px;
-  padding: 0 8.5px;
-  display: flex;
-  justify-content: space-around;
-  justify-content: space-between;
-  align-items: center;
-  width: 0.1;
-}*/
-
 .calendar {
-  margin: 10px;
+  margin: 9px;
   background-color: white;
   text-align: justify;
+  margin-top: 30px;
+  border-radius: 20px;
 }
 
 .blue {
@@ -166,11 +215,11 @@ h3 {
 }
 
 .color_3 {
-  background-color: rgb(126, 226, 126);
+  background-color: #eeebdf;
 }
 
 .color_2 {
-  background-color: rgb(250, 250, 139);
+  background-color: #c2af9d;
 }
 
 .color_1 {
