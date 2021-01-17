@@ -1,4 +1,3 @@
-
 const monthNames = [
   "January",
   "February",
@@ -14,7 +13,9 @@ const monthNames = [
   "December",
 ];
 const head = document.querySelector(".head");
-const click_me = document.querySelector(".click__me");
+const happy = document.getElementById("happybutton");
+const neutral = document.getElementById("neutralbutton");
+const sad = document.getElementById("sadbutton");
 
 let curDate = new Date();
 let curYear = curDate.getFullYear();
@@ -32,15 +33,26 @@ const numDaysInMonth = lastDayInMonth.getDate();
 const arrDate = Array.from({ length: numDaysInMonth }, () => 0);
 const buttonContainer = document.querySelector(".buttons");
 
-const createButtons = function () {
-  arrDate.forEach(function (_, i) {
-    buttonContainer.insertAdjacentHTML(
-      "beforeend",
-      `<button class="buttons__button">${i + 1}</button>`
-    );
-  });
-};
-
-createButtons();
+const daysHTML = document?.querySelector(".days");
+let messageDays = "";
+for (let i = 1; i <= numDaysInMonth; i++) {
+  messageDays += `<div class="btn__${i}">${i}</div>`;
+  if (daysHTML) daysHTML.innerHTML = messageDays;
+}
 const buttonAdding = ``;
 
+const updateButton = function () {
+  const divLocation = document.querySelector(`.btn__${curDat}`);
+  if (divLocation) divLocation.classList.add("blue");
+  console.log("test");
+};
+
+happy?.addEventListener("click", function () {
+  console.log("helo");
+});
+neutral?.addEventListener("click", function () {
+  console.log("helo");
+});
+sad?.addEventListener("click", function () {
+  console.log("helo");
+});
