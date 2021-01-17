@@ -120,11 +120,25 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 /* .weekdays {
+  width: 80%;
+  height: 80%;
+  padding: 0 7px 0 7px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+   align-items: center;
 } */
+/*
+.weekdays div {
+  letter-spacing: 0.008px;
+  padding: 0 8.5px;
+  display: flex;
+  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  width: 0.1;
+}*/
 
 .calendar {
   margin: 10px;
@@ -141,8 +155,8 @@ h3 {
 }
 
 .btn {
-  width: 18px;
-  height: 18px;
+  width: 18.5px;
+  height: 18.5px;
   text-align: center;
 }
 .btn:hover {
@@ -161,4 +175,13 @@ h3 {
 
 .color_1 {
   background-color: rgb(161, 161, 245);
+}
+
+.hidden {
+  position: absolute;
+  display: none;
+}
+
+.nohover {
+  pointer-events: none;
 }
